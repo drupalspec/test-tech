@@ -30,5 +30,6 @@
         () => console.log('Data load!'),
       )
     }
-  };
+  }
+
 </script>

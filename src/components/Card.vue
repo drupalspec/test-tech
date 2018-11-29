@@ -6,9 +6,9 @@
           style="max-width: 20rem;"
           class="mb-2 text-left">
     <p style="min-height: 70px" class="card-text">{{item.overview | truncate(69, '...') }}</p>
-    <b-row v-if="$route.name == 'page'" style="align-items: baseline">
+    <b-row v-if="$route.name == 'page'" style="align-items: baseline;">
       <b-col>
-        <p>Vote: {{item.vote_count}}</p>
+        <p>Vote:{{item.vote_count}}</p>
       </b-col>
       <b-col>
         <router-link class="btn btn-primary" :to="{ name: 'movie', params: { page: this.$route.params.page, id: item.id } }">View more</router-link>
